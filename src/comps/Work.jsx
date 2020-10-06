@@ -26,7 +26,7 @@ const sites = {
     subTitleOne: 'Portfolio of Trevor Brown',
     subTitleTwo: 'Really cool Developer',
     image: PFT,
-    url: 'http://trevthedev.surge.sh',
+    url: 'https://trevbo25.github.io/trevorsportfolio/',
     code: 'https://github.com/TrevBo25/trevorsportfolio'
   }
 }
