@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/trevorsportfolio/static/css/main.03f5e8c4.chunk.css",
+    "main.js": "/trevorsportfolio/static/js/main.478aa257.chunk.js",
+    "main.js.map": "/trevorsportfolio/static/js/main.478aa257.chunk.js.map",
+    "runtime-main.js": "/trevorsportfolio/static/js/runtime-main.df5356f4.js",
+    "runtime-main.js.map": "/trevorsportfolio/static/js/runtime-main.df5356f4.js.map",
+    "static/js/2.a8b54129.chunk.js": "/trevorsportfolio/static/js/2.a8b54129.chunk.js",
+    "static/js/2.a8b54129.chunk.js.map": "/trevorsportfolio/static/js/2.a8b54129.chunk.js.map",
+    "index.html": "/trevorsportfolio/index.html",
+    "precache-manifest.9e694a697b952c9c77bdda9d639ccdbb.js": "/trevorsportfolio/precache-manifest.9e694a697b952c9c77bdda9d639ccdbb.js",
+    "service-worker.js": "/trevorsportfolio/service-worker.js",
+    "static/css/main.03f5e8c4.chunk.css.map": "/trevorsportfolio/static/css/main.03f5e8c4.chunk.css.map",
+    "static/js/2.a8b54129.chunk.js.LICENSE.txt": "/trevorsportfolio/static/js/2.a8b54129.chunk.js.LICENSE.txt",
+    "static/media/avondale.png": "/trevorsportfolio/static/media/avondale.793a3662.png",
+    "static/media/mirroredmemories.png": "/trevorsportfolio/static/media/mirroredmemories.bf37fd42.png",
+    "static/media/portfolio.png": "/trevorsportfolio/static/media/portfolio.7af3183e.png",
+    "static/media/resume.pdf": "/trevorsportfolio/static/media/resume.c6888f29.pdf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.df5356f4.js",
+    "static/js/2.a8b54129.chunk.js",
+    "static/css/main.03f5e8c4.chunk.css",
+    "static/js/main.478aa257.chunk.js"
+  ]
+}
