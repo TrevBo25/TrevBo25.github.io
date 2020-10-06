@@ -1,0 +1,23 @@
+.Nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  max-height: 100vh;
+  top: 80px;
+  right: 20px;
+  font-family: $title;
+
+  .link {
+    color: white;
+    transform: rotate(-90deg);
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:visited {
+      color: white;
+    }
+  }
+}

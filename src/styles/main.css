@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.App {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 80px 40px;
+  color: white;
+  position: relative; }
+
+.Title {
+  font-family: "Heebo", sans-serif;
+  display: inline-block; }
+  .Title .container {
+    display: flex;
+    flex-direction: column; }
+  .Title .yell {
+    font-size: 200px;
+    font-weight: 600; }
+  .Title .job {
+    padding: 30px 0 80px 0;
+    align-self: flex-end;
+    font-weight: 600;
+    font-size: 20px; }
+  .Title .blurb {
+    align-self: center;
+    color: #AFAFAF;
+    padding-bottom: 70px; }
+
+.Arrow {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: auto; }
+  .Arrow .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite; }
+    .Arrow .chevron:first-child {
+      animation: move 3s ease-out 1s infinite; }
+    .Arrow .chevron:nth-child(2) {
+      animation: move 3s ease-out 2s infinite; }
+  .Arrow .chevron:before,
+  .Arrow .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff; }
+  .Arrow .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg); }
+  .Arrow .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg); }
+
+@keyframes move {
+  25% {
+    opacity: 1; }
+  33% {
+    opacity: 1;
+    transform: translateY(30px); }
+  67% {
+    opacity: 1;
+    transform: translateY(40px); }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5); } }
+
+.Nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  max-height: 100vh;
+  top: 80px;
+  right: 20px;
+  font-family: "Heebo", sans-serif; }
+  .Nav .link {
+    color: white;
+    transform: rotate(-90deg); }
+    .Nav .link:hover {
+      cursor: pointer; }
+    .Nav .link:visited {
+      color: white; }
+
+.Work {
+  font-family: "Heebo", sans-serif;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .Work .work-title {
+    font-weight: 600;
+    font-size: 120px;
+    align-self: center;
+    margin-bottom: 100px; }
+
+.Example {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+  width: 80%; }
+  .Example .text {
+    display: flex;
+    flex-direction: column; }
+    .Example .text .title {
+      font-size: 30px;
+      margin-bottom: 40px; }
+      .Example .text .title:visited {
+        color: white; }
+    .Example .text .info {
+      align-self: flex-end;
+      color: #AFAFAF; }
+  .Example:nth-child(even) {
+    flex-direction: row-reverse; }
+    .Example:nth-child(even) .info {
+      align-self: flex-start; }
+  .Example .img-container {
+    position: relative; }
+    .Example .img-container .snapshot {
+      height: 150px;
+      width: auto; }
+    .Example .img-container .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: white;
+      color: black;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .Example .img-container .overlay p {
+        padding: 0 5px; }
+      .Example .img-container .overlay .link:visited {
+        color: black; }
+    .Example .img-container:hover .overlay {
+      opacity: .5; }
