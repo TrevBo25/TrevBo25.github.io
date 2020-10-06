@@ -4,7 +4,6 @@ import resume from '../assets/resume.pdf'
 
 const Nav = () => (
   <div className='Nav'>
-    {/*TODO ADD IN LINKS */}
     <a href="https://www.linkedin.com/in/trevor-brown/" target="_blank" rel="noopener noreferrer" className='link'>LINKEDIN</a>
     <a href="https://twitter.com/Father_T" target="_blank" rel="noopener noreferrer" className='link'>TWITTER</a>
     <a href="https://github.com/TrevBo25" target="_blank" rel="noopener noreferrer" className='link'>GITHUB</a>

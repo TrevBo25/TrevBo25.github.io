@@ -10,7 +10,7 @@ const sites = {
     subTitleOne: 'Website of Mirrored Memories QC',
     subTitleTwo: 'Interactive Photo Booth Provider',
     image: MM,
-    url: 'http://www.mirroredmemoriesqc.com/',
+    url: 'http://www.mirroredmemoriesqc.com',
     code: 'https://github.com/TrevBo25/mirrored-memories-qc'
   },
   avonDale: {
@@ -18,7 +18,7 @@ const sites = {
     subTitleOne: 'Website of The Band Avondale',
     subTitleTwo: 'Memphis based band',
     image: AD,
-    url: 'https://thebandavondale.com/',
+    url: 'https://thebandavondale.com',
     code: 'https://github.com/TrevBo25/TheBandAvd'
   },
   portfolio: {
@@ -26,7 +26,7 @@ const sites = {
     subTitleOne: 'Portfolio of Trevor Brown',
     subTitleTwo: 'Really cool Developer',
     image: PFT,
-    url: 'https://thebandavondale.com/',
+    url: 'http://trevthedev.surge.sh',
     code: 'https://github.com/TrevBo25/trevorsportfolio'
   }
 }
@@ -55,7 +55,7 @@ const Work = () => (
     <h1 className="work-title">Selected Works</h1>
     <Example {...sites.mirroredMem}/>
     <Example {...sites.avonDale}/>
-    <Example {...sites.portfolio}/> {/*TODO Add in portfolio url and github link */}
+    <Example {...sites.portfolio}/>
   </div>
 );
 
