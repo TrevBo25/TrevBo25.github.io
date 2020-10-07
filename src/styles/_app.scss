@@ -5,4 +5,8 @@
   padding: 80px 40px;
   color: white;
   position: relative;
+
+  @media screen and (max-width: 780px) {
+    padding: 80px 40px 0 40px;
+  }
 }

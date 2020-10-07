@@ -4,8 +4,8 @@ import MM from '../assets/mirroredmemories.png'
 import AD from '../assets/avondale.png'
 import PFT from '../assets/portfolio.png'
 
-const sites = {
-  mirroredMem: {
+const sites = [
+  {
     title: 'Mirrored Memories QC',
     subTitleOne: 'Website of Mirrored Memories QC',
     subTitleTwo: 'Interactive Photo Booth Provider',
@@ -13,7 +13,7 @@ const sites = {
     url: 'http://www.mirroredmemoriesqc.com',
     code: 'https://github.com/TrevBo25/mirrored-memories-qc'
   },
-  avonDale: {
+  {
     title: 'Avondale',
     subTitleOne: 'Website of The Band Avondale',
     subTitleTwo: 'Memphis based band',
@@ -21,7 +21,7 @@ const sites = {
     url: 'https://thebandavondale.com',
     code: 'https://github.com/TrevBo25/TheBandAvd'
   },
-  portfolio: {
+  {
     title: 'This Portfolio',
     subTitleOne: 'Portfolio of Trevor Brown',
     subTitleTwo: 'Really cool Developer',
@@ -29,14 +29,16 @@ const sites = {
     url: 'https://trevbo25.github.io/trevorsportfolio/',
     code: 'https://github.com/TrevBo25/trevorsportfolio'
   }
-}
+]
 
 const Example = ({title, subTitleOne, subTitleTwo, image, url, code}) => (
   <div className="Example">
     <div className="text">
-    <h1 href="https://github.com/TrevBo25" target="_blank" rel="noopener noreferrer" className="title">{title}</h1>{/* http://www.mirroredmemoriesqc.com */}
-    <p className="info">{subTitleOne}</p>
-      <p className="info">{subTitleTwo}</p>
+    <h1 href="https://github.com/TrevBo25" target="_blank" rel="noopener noreferrer" className="title">{title}</h1>
+      <div className="info-container">
+        <p className="info">{subTitleOne}</p>
+        <p className="info">{subTitleTwo}</p>
+      </div>
     </div>
     <div className="img-container">
       <img src={image} alt="" className="snapshot" />
@@ -53,9 +55,10 @@ const Example = ({title, subTitleOne, subTitleTwo, image, url, code}) => (
 const Work = () => (
   <div className="Work">
     <h1 className="work-title">Selected Works</h1>
-    <Example {...sites.mirroredMem}/>
-    <Example {...sites.avonDale}/>
-    <Example {...sites.portfolio}/>
+    {sites.length
+      ? sites.map(e => <Example {...e} />)
+      : null
+    }
   </div>
 );
 

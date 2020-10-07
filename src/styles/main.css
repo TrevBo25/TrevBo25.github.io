@@ -59,6 +59,9 @@ a {
   padding: 80px 40px;
   color: white;
   position: relative; }
+  @media screen and (max-width: 780px) {
+    .App {
+      padding: 80px 40px 0 40px; } }
 
 .Title {
   font-family: "Heebo", sans-serif;
@@ -78,6 +81,32 @@ a {
     align-self: center;
     color: #AFAFAF;
     padding-bottom: 70px; }
+  @media screen and (max-width: 1300px) {
+    .Title .yell {
+      font-size: 180px; } }
+  @media screen and (max-width: 1100px) {
+    .Title .yell {
+      font-size: 160px; } }
+  @media screen and (max-width: 960px) {
+    .Title .yell {
+      font-size: 150px; }
+    .Title .job {
+      font-size: 18px; } }
+  @media screen and (max-width: 890px) {
+    .Title .yell {
+      font-size: 140px; }
+    .Title .blurb {
+      font-size: 14px; } }
+  @media screen and (max-width: 890px) {
+    .Title .yell {
+      font-size: 120px; }
+    .Title .job {
+      font-size: 16px; }
+    .Title .blurb {
+      font-size: 12px; } }
+  @media screen and (max-width: 700px) {
+    .Title .yell {
+      font-size: 100px; } }
 
 .Arrow {
   position: relative;
@@ -141,6 +170,9 @@ a {
       cursor: pointer; }
     .Nav .link:visited {
       color: white; }
+  @media screen and (max-width: 780px) {
+    .Nav {
+      display: none; } }
 
 .Work {
   font-family: "Heebo", sans-serif;
@@ -168,13 +200,14 @@ a {
       margin-bottom: 40px; }
       .Example .text .title:visited {
         color: white; }
-    .Example .text .info {
-      align-self: flex-end;
-      color: #AFAFAF; }
+    .Example .text .info-container {
+      display: flex;
+      flex-direction: column; }
+      .Example .text .info-container .info {
+        align-self: flex-start;
+        color: #AFAFAF; }
   .Example:nth-child(even) {
     flex-direction: row-reverse; }
-    .Example:nth-child(even) .info {
-      align-self: flex-start; }
   .Example .img-container {
     position: relative; }
     .Example .img-container .snapshot {
@@ -202,3 +235,108 @@ a {
         color: black; }
     .Example .img-container:hover .overlay {
       opacity: .5; }
+
+@media screen and (max-width: 1300px) {
+  .Work .work-title {
+    font-size: 110px;
+    margin-bottom: 90px; }
+  .Example .text .title {
+    font-size: 28px; }
+  .Example .text .info {
+    font-size: 14px; }
+  .Example .img-container .snapshot {
+    height: 125px; } }
+
+@media screen and (max-width: 1100px) {
+  .Work .work-title {
+    font-size: 100px;
+    margin-bottom: 80px; }
+  .Example .text .title {
+    font-size: 26px; }
+  .Example .text .info {
+    font-size: 12px; }
+  .Example .img-container .snapshot {
+    height: 100px; } }
+
+@media screen and (max-width: 960px) {
+  .Work .work-title {
+    font-size: 80px;
+    margin-bottom: 70px; }
+  .Example {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 20px 0; }
+    .Example .text {
+      align-items: flex-start;
+      width: 350px; }
+      .Example .text .title {
+        font-size: 30px;
+        padding-top: 30px;
+        margin-bottom: 20px; }
+      .Example .text .info {
+        font-size: 16px;
+        align-self: center; }
+    .Example .img-container .snapshot {
+      height: 150px; }
+    .Example:nth-child(even) {
+      flex-direction: column-reverse; } }
+
+@media screen and (max-width: 780px) {
+  .Work .work-title {
+    font-size: 70px;
+    margin-bottom: 60px; }
+  .Example .text {
+    width: 350px; }
+    .Example .text .title {
+      font-size: 28px; }
+    .Example .text .info {
+      font-size: 14px; }
+  .Example .img-container .snapshot {
+    height: 125px; } }
+
+@media screen and (max-width: 660px) {
+  .Work .work-title {
+    font-size: 60px;
+    margin-bottom: 50px; }
+  .Example .text {
+    width: 300px; }
+    .Example .text .title {
+      font-size: 26px; }
+    .Example .text .info {
+      font-size: 12px; }
+  .Example .img-container .snapshot {
+    height: 100px; } }
+
+@media screen and (max-width: 660px) {
+  .Work .work-title {
+    font-size: 50px;
+    margin-bottom: 40px; } }
+
+@media screen and (max-width: 660px) {
+  .Work .work-title {
+    font-size: 40px;
+    margin-bottom: 30px; }
+  .Example .text {
+    width: 280px; }
+    .Example .text .title {
+      font-size: 24px; }
+    .Example .text .info {
+      font-size: 11px; }
+  .Example .img-container .snapshot {
+    height: 90px; } }
+
+.Footer {
+  display: none;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 40px 0; }
+  .Footer .link {
+    color: black;
+    font-size: 35px; }
+    .Footer .link:visited {
+      color: black; }
+  @media screen and (max-width: 780px) {
+    .Footer {
+      display: flex; } }

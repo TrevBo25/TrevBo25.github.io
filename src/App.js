@@ -4,6 +4,7 @@ import Title from './comps/Title'
 import Arrow from './comps/Arrow'
 import Nav from './comps/Nav'
 import Work from './comps/Work'
+import Footer from './comps/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Title />
       <Arrow />
       <Work />
+      <Footer />
     </div>
   );
 }

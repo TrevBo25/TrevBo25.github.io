@@ -24,4 +24,56 @@
     color: #AFAFAF;
     padding-bottom: 70px;
   }
+
+  @media screen and (max-width: 1300px) {
+    .yell {
+      font-size: 180px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .yell {
+      font-size: 160px;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .yell {
+      font-size: 150px;
+    }
+
+    .job {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .yell {
+      font-size: 140px;
+    }
+
+    .blurb {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .yell {
+      font-size: 120px;
+    }
+
+    .job {
+      font-size: 16px;
+    }
+
+    .blurb {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .yell {
+      font-size: 100px;
+    }
+  }
 }
